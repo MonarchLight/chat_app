@@ -24,13 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ChatMnh",
-      theme: ThemeData(
-          primarySwatch: Colors.amber,
-          accentColor: Color.fromARGB(195, 165, 42, 20),
-          buttonTheme: ButtonTheme.of(context).copyWith(
-              buttonColor: Color.fromARGB(255, 6, 157, 177),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)))),
+      theme: ThemeData(primarySwatch: Colors.amber),
       home: AuthScreen(),
     );
   }
